@@ -15,7 +15,7 @@
               </v-flex>
               <v-flex xs8  offset-xs2 style="background-color: white">
                 <campaign-info></campaign-info>
-                <component v-for="view in views" :is="view.view" @getHeight="getHeight" :key="view.name" class="mt-5"></component>
+                <component v-for="view in views" :is="view.view" @getHeight="getHeight" :key="view.name"></component>
               </v-flex>
               <v-flex xs2></v-flex>
             </v-layout>

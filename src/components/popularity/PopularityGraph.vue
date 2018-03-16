@@ -1,17 +1,18 @@
 <template>
-  <v-layout row wrap>
+  <v-layout row wrap pa-5>
     <v-flex xs12>
-      <hourly-chart></hourly-chart>
+      <h3>popularity graph goes here</h3>
+    </v-flex>
+    <v-flex xs12>
+      <v-divider></v-divider>       
     </v-flex>
   </v-layout>
 </template>
 
 <script>
-import HourlyChart from '@/components/overview/HourlyChart'
 export default {
-  name: 'HourlyHeatmap',
+  name: 'popularity',
   components: {
-    HourlyChart
   },
   mounted () {
   },
@@ -19,6 +20,7 @@ export default {
   },
   data () {
     return {
+
     }
   }
 }

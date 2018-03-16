@@ -58,10 +58,8 @@
             </p>
           </v-flex>
         </v-layout>
-
       </v-flex>
       <v-flex xs12>
-        <v-divider></v-divider>
       </v-flex>
     </v-layout>
   </v-layout>

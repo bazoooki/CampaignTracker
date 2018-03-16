@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap justify-center>
-    <v-flex xs12>
-      <bar-chart :chart-data="chartData" :options="chartOptions" :height="130" class="pa-3"></bar-chart>
+    <v-flex xs11>
+      <bar-chart :chart-data="chartData" :options="chartOptions" :height="120"></bar-chart>
     </v-flex>
   </v-layout>
 </template>

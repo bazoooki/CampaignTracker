@@ -1,7 +1,7 @@
 <template>
 <v-layout row wrap>
-  <v-flex x12>
-    <doughnut-chart :chart-data="chartData" :options="chartOptions"  :height="300" class=""></doughnut-chart>
+  <v-flex x12 mt-5>
+    <doughnut-chart :chart-data="chartData" :options="chartOptions"  :height="300" style="position:relative;left:0px"></doughnut-chart>
   </v-flex>
 </v-layout>
 </template>
