@@ -88,7 +88,7 @@ export default {
 .clr_cont span{position: relative;display: inline-block;vertical-align: top;color: #43415b;font-size: 14px;font-weight: 400}
 .clr_cont{height: 18px;line-height: 18px;position: relative;display: inline-block;}
 .clr_cont span.clr{height: 18px;width: 18px;position: relative;display: inline-block;}
-.clr_cont span.clr.pace{background: blue}
+.clr_cont span.clr.pace{background: #45829c}
 .clr_cont span.clr.total{background: #f76973}
 ul.backers li.backers .bot_line, ul.funding li.funding .bot_line{transform: scaleX(1);}
 .sep{width: 1px;background: #ececec;position: absolute;top:50px;right: 0px;bottom: 50px}
