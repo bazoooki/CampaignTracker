@@ -1,7 +1,7 @@
 <template>
 <v-layout row wrap>
-  <v-flex x12 mt-5 text-xs-center>
-    <doughnut-chart :chart-data="chartData" :options="chartOptions"  :height="300" style="position:relative;left:0px"></doughnut-chart>
+  <v-flex x10 mt-5 text-xs-center>
+    <doughnut-chart :chart-data="chartData" :options="chartOptions"  :height="300" style="position:relative;left:-30px"></doughnut-chart>
     <div class="hour_info" v-if="selectedHour">
       <div class="txt_title mt-5 pt-5">Hour: {{selectedHour}}</div>
       <div class="txt_info mt-2">
