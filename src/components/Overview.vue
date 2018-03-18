@@ -22,7 +22,7 @@
             <li class="backers" @click="switchTab('backers')">
               <span>Backers</span>
               <div class="bot_line"></div>
-            </li>                     
+            </li>
           </ul>
         </v-flex>
         <v-flex xs6 text-xs-left>
@@ -32,7 +32,7 @@
           </div>
           <div class="clr_cont ml-4">
             <span class="clr total"></span>
-            <span class="ml-1">Pace (daily at this time)</span>
+            <span class="ml-1">Total</span>
           </div>
           <div class="clr_cont ml-4">
             <span class="clr icon">
@@ -96,7 +96,7 @@ ul {position: relative;top:0px;height: 50px}
 ul li{position:relative;display: inline-block;padding:0px;margin:0px;margin-right: 35px;font-size: 16px;font-weight: 400;cursor: pointer;padding-bottom: 5px;color:#87868e;}
 ul li:last-child{margin-right: 0px;}
 ul li .bot_line{width: 100%;height: 4px;position: absolute;bottom: 0px;left: 0px;background: #f86973;transition: all 0.2s;transform-origin: bottom center;transform: scaleX(0);}
-ul li span{transition: all .25s !important;font-weight:400 !important;color: #43414e}
+ul li span{transition: all .25s !important;font-weight:400 !important;color: #43414e;text-transform: uppercase;}
 ul li a{color: #45a1c0 !important;direction: ltr;font-weight: 400 !important;text-align: left;font-size: 16px;position: relative;text-decoration: underline;}
 
 </style>

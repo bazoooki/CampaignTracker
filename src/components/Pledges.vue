@@ -62,10 +62,10 @@
           </div>
         </v-flex>
         <v-flex xs5>
-          pie goes here :)
+          <top-pledges-chart></top-pledges-chart>
         </v-flex>
       </v-layout>
-      <v-divider class="mt-3"></v-divider>
+      <v-divider class="mt-5"></v-divider>
     </v-flex>
     <v-flex xs12>
       <v-layout row wrap pa-5 id="limited_rewards">
@@ -156,8 +156,12 @@
 </template>
 
 <script>
+import TopPledgesChart from '@/components/pledges/TopPledgesChart'
 export default {
   name: 'Pledges',
+  components: {
+    TopPledgesChart
+  },
   mounted () {
   },
   methods: {
