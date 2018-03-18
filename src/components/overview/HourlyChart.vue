@@ -1,7 +1,21 @@
 <template>
 <v-layout row wrap>
-  <v-flex x12 mt-5>
+  <v-flex x12 mt-5 text-xs-center>
     <doughnut-chart :chart-data="chartData" :options="chartOptions"  :height="300" style="position:relative;left:0px"></doughnut-chart>
+    <div class="hour_info" v-if="selectedHour">
+      <div class="txt_title mt-5 pt-5">Hour: {{selectedHour}}</div>
+      <div class="txt_info mt-2">
+        <v-layout row wrap justify-center>
+          <v-flex xs9 offset-xs3 text-xs-left>
+             <span>Backers:</span>
+             <span class="ml-2">10</span><br/>
+             <span>Funding:</span>
+             <span class="ml-2">$405</span>
+
+          </v-flex>
+        </v-layout>
+      </div>
+    </div>
   </v-flex>
 </v-layout>
 </template>
@@ -16,11 +30,21 @@ export default {
   mounted () {
   },
   methods: {
+    chartOnClick (evt, item) {
+      this.selectedHour = item[0]._index + 1
+    }
+  },
+  computed: {
+    updateInner (num) {
+
+    }
   },
   data () {
     return {
-      // segmentShowStroke: false
+      selectedHour: null,
+      hoursArray: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24'],
       chartOptions: {
+        onClick: this.chartOnClick,
         elements: {
           arc: {
             borderWidth: 0
@@ -43,4 +67,6 @@ export default {
 }
 </script>
 <style scoped>
+.hour_info{position: absolute;left: 50%;top:50%;transform: translate(-50%, -50%);width: 160px;}
+.hour_info .txt_title{font-size: 18px;font-weight: 600;width: 100%;}
 </style>
