@@ -47,15 +47,19 @@
     <v-flex xs12 pl-5 mt-4>
       <popularity-graph></popularity-graph>
     </v-flex>
+    <v-flex xs12 pl-5 mt-4>
+      <most-ranked></most-ranked>
+    </v-flex>
   </v-layout>
 </template>
 
 <script>
+import MostRanked from '@/components/popularity/MostRanked'
 import PopularityGraph from '@/components/popularity/PopularityGraph'
 export default {
   name: 'Popularity',
   components: {
-    PopularityGraph
+    PopularityGraph, MostRanked
   },
   mounted () {
   },
