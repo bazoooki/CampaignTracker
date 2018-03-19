@@ -7,19 +7,19 @@
       <div class="big_title">
         <span>Community
         <div class="bot_line"></div>
-        </span>        
+        </span>
       </div>
       <h3 class="mt-4">Backers by countries</h3>
     </v-flex>
-    <v-flex xs12 pl-5 mt-4>
+    <v-flex xs12 pl-5 mt-5>
       <v-layout row wrap>
         <v-flex xs6 mb-4>
           <vue-world-map :countryData="getCountryData" lowColor="#e0ebf3" highColor="#4f9ac1" countryStrokeColor="#818181"></vue-world-map>
         </v-flex>
         <v-flex xs5 style="position:relative">
           <div class="sep"></div>
-          <v-layout row wrap v-for="country in flagsData" mt-2>
-            <v-flex xs3>              
+          <v-layout row wrap v-for="country in flagsData" mt-2 :key="country.iso">
+            <v-flex xs3>
             </v-flex>
             <v-flex xs7>
               <div class="flag_c">
@@ -52,16 +52,14 @@ export default {
   },
   computed: {
     getCountryData () {
-      let a = this.flagsData.map(obj =>{          
-         this.countryData[obj.iso] = obj.value
+      let cd = {}
+      this.flagsData.map(obj => {
+        cd[obj.iso] = obj.value
       })
-      return this.countryData
+      return cd
     }
   },
   methods: {
-    sendData () {
-      this.$emit('getHeight', this.$refs.container.clientHeight)
-    }
   },
   data () {
     return {
