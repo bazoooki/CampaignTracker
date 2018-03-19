@@ -14,11 +14,11 @@
     <v-flex xs12 pl-5 mt-5>
       <v-layout row wrap>
         <v-flex xs6 mb-4>
-          <vue-world-map :countryData="getCountryData" lowColor="#e0ebf3" highColor="#4f9ac1" countryStrokeColor="#818181"></vue-world-map>
+          <vue-world-map :countryData="getCountryData" lowColor="#B3E5FC" highColor="#0288D1" countryStrokeColor="#818181"></vue-world-map>
         </v-flex>
-        <v-flex xs5 style="position:relative">
+        <v-flex xs5 style="position:relative" mb-4>
           <div class="sep"></div>
-          <v-layout row wrap v-for="country in flagsData" mt-2 :key="country.iso">
+          <v-layout row wrap v-for="country in flagsData" mt-1 :key="country.iso">
             <v-flex xs3>
             </v-flex>
             <v-flex xs7>
@@ -36,6 +36,15 @@
             </v-flex>
           </v-layout>
         </v-flex>
+      </v-layout>
+    </v-flex>
+    <v-flex xs12 pa-5>
+      <v-divider></v-divider>
+    </v-flex>
+    <v-flex xs12 pl-5>
+      <v-layout row wrap>
+        <v-flex xs6>New vs. returning</v-flex>
+        <v-flex xs6>Engagement</v-flex>
       </v-layout>
     </v-flex>
   </v-layout>
@@ -63,7 +72,6 @@ export default {
   },
   data () {
     return {
-      countryData: {},
       flagsData: [
         {
           name: 'United States',
@@ -76,17 +84,48 @@ export default {
           value: 18
         },
         {
+          name: 'United Kingdom',
+          iso: 'GB',
+          value: 17
+        },
+        {
           name: 'Germany',
-          iso: 'GE',
+          iso: 'DE',
           value: 14
+        },
+        {
+          name: 'Italy',
+          iso: 'IT',
+          value: 8
+        },
+        {
+          name: 'France',
+          iso: 'FR',
+          value: 6
+        },
+        {
+          name: 'Sweden',
+          iso: 'SE',
+          value: 3.5
+        },
+        {
+          name: 'Denemark',
+          iso: 'DK',
+          value: 3
+        },
+        {
+          name: 'Israel',
+          iso: 'IL',
+          value: 1.5
         }
+
       ]
     }
   }
 }
 </script>
 <style scoped>
-.sep{width: 1px;background: #ececec;position: absolute;top: 0px;left: 50px;bottom: 40px;}
+.sep{width: 1px;background: #ececec;position: absolute;top: 20px;left: 50px;bottom: 40px;}
 .flag_c{font-size: 24px;position: relative;display: inline-block;}
 .c_name{color: #272b37;font-size: 18px;font-weight: 400;position: relative;display: inline-block;}
 .value{font-size: 24px;color: #4597b6;font-weight: 500}
