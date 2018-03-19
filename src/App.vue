@@ -24,4 +24,6 @@ h3{font-weight: 400;font-size: 20px}
     background-color: #ececec;
     height: 15px;
 }
+.vue-world-map .land{transition: all 0.2s}
+.vue-world-map .land:hover{fill: #f5f5f5 !important;}
 </style>

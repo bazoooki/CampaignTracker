@@ -26,7 +26,7 @@
     </v-flex>
     <v-flex xs12 mt-4>
       <v-container fluid grid-list-lg>
-        <v-layout row wrap>
+        <v-layout row wrap mb-4>
           <v-flex xs4>
             <rank-box rankName="Sub-Category" :data="subCategroyData"></rank-box>
           </v-flex>
