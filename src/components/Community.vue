@@ -43,8 +43,12 @@
     </v-flex>
     <v-flex xs12 pl-5>
       <v-layout row wrap>
-        <v-flex xs6>New vs. returning</v-flex>
-        <v-flex xs6>Engagement</v-flex>
+        <v-flex xs6>
+          <new-vs-return></new-vs-return>
+        </v-flex>
+        <v-flex xs6>
+          <engagmant-chart></engagmant-chart>
+        </v-flex>
       </v-layout>
     </v-flex>
   </v-layout>
@@ -52,10 +56,12 @@
 
 <script>
 import VueWorldMap from 'vue-world-map'
+import  NewVsReturn from '@/components/community/NewVsReturn'
+import  EngagmantChart from '@/components/community/EngagmantChart'
 export default {
   name: 'Community',
   components: {
-    VueWorldMap
+    VueWorldMap, NewVsReturn, EngagmantChart
   },
   mounted () {
   },

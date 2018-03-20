@@ -68,10 +68,10 @@ export default {
             label: 'At this time',
             pointBackgroundColor: 'rgba(0, 0, 0, 0)',
             pointBorderColor: 'rgba(0, 0, 0, 0)',
-            backgroundColor: 'rgba(0, 0, 0, 0)',
+            backgroundColor: 'rgba(69, 130, 156, 0.6)',
             borderColor: 'rgba(69, 130, 156, 1)',
             data: [5, 5.5, 6, 5.8, 5.9, 6.1, 5.5, 5.7, 6.4, 5.8, 4.9, 5, 5, 5.5, 5.8, 5.3, 5.44, 5.9, 6, 5.1, 4.8, 5.9, 6, 5.1, 4.8, 5.9, 6],
-            type: 'line'
+            type: 'bar'
           },
           {
             label: 'Backers',
